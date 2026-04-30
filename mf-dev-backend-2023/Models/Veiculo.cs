@@ -16,7 +16,7 @@ namespace mf_dev_backend_2023.Models
         public string Nome { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar a Placa")]
-        public int Placa { get; set; }
+        public string Placa { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar o Ano de Fabricação")]
         [Display(Name = "Ano de Fabricação")]
@@ -27,6 +27,8 @@ namespace mf_dev_backend_2023.Models
         [Display(Name = "Ano do Modelo")]
 
         public int AnoModelo { get; set; }
+
+        public ICollection<Consumo> Consumos { get; set; }
 
 
     }

@@ -9,5 +9,10 @@ namespace mf_dev_backend_2023.Models
         public DbSet<Veiculo> Veiculos { get; set; }
 
 
+        public DbSet<Consumo> Consumos { get; set; }
+
+        public DbSet<Clientes> clientes { get; set; }
+
+
     }
 }
